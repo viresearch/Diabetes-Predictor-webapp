@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Diabetes Predictor Web App</title>
+	</head>
+
+    <body>
+
+        <!-- Website Title -->
+		<div class="container">
+            <h2 class='container-heading'><span class="heading_font">Diabetes Predictor Web App</span></h2>
+
+		<!-- Result -->
+		<div class="results">
+			{% if prediction==1 %}
+				<h1>Prediction: <span class='danger'>you are diabetic.!</span></h1>
+			{% elif prediction==0 %}
+				<h1>Prediction: <span class='safe'>you are not a diabetic.!</span></h1>
+			{% endif %}
+		</div>
+
+	</body>
+</html>
